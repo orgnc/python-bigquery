@@ -135,7 +135,7 @@ def _parse_struct_fields(
     parse_struct_field=re.compile(
         r"""
         (?:(\w+)\s+)    # field name
-        ([A-Z0-9<> ,()]+)  # Field type
+        ([A-Z0-9<> ,()\_]+)  # Field type
         $""",
         re.VERBOSE | re.IGNORECASE,
     ).match,
